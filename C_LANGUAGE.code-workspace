@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../C_LANGUAGE"
+		},
+		{
+			"path": "../C++"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"random": "c",
+			"iostream": "cpp"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "HTML"
+	}
+}

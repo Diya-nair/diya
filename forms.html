@@ -1,0 +1,273 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+</head>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <fieldset>
+        <legend>Personalise</legend>
+    <form action="/submit.php">
+        <div>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" placeholder="Enter your name: ">
+        </div>
+
+        <div>
+            <label for="Phone">Phone</label>
+            <input type="number" id="Phone" placeholder="Enter your number: ">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+
+        <div>
+            <label for="date">Birthday</label>
+            <input type="date" id="date" placeholder="Birthday">
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="" disabled selected>Select gender: </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Subsription Plan: </p>
+            <input type="radio" id="basic" name="subsription">
+            <label for="basic">basic</label>
+            <input type="radio" id="premium" name="subsription">
+            <label for="premium">premium</label>
+            <input type="radio" id="VIP" name="subsription">
+            <label for="VIP">VIP</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the terms and condition.</label>
+        </div>
+
+        <div>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" required>Enter your comment: </textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</fieldset>
+</body>
+
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: auto;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: calc(100% - 160px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input:required {
+            border-color: #f00;
+        }
+
+        input:focus {
+            border-color: #5cb85c;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <fieldset>
+        <legend>Personalise</legend>
+        <form action="/submit.php">
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" id="Name" placeholder="Enter your name: ">
+            </div>
+
+            <div>
+                <label for="Phone">Phone</label>
+                <input type="number" id="Phone" placeholder="Enter your number: ">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+
+            <div>
+                <label for="date">Birthday</label>
+                <input type="date" id="date" placeholder="Birthday">
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected>Select gender: </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Subsription Plan: </p>
+                <input type="radio" id="basic" name="subsription">
+                <label for="basic">basic</label>
+                <input type="radio" id="premium" name="subsription">
+                <label for="premium">premium</label>
+                <input type="radio" id="VIP" name="subsription">
+                <label for="VIP">VIP</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the terms and condition.</label>
+            </div>
+
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments" required>Enter your comment: </textarea>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
+
+
+
+
